@@ -28,15 +28,20 @@ padding: 5rem 0;
      padding: 5rem 0;
 }
 .heading-secondary {
+    text-shadow: none;
+    text-align: center;
     font-size: 3rem;
     font-weight: 700;
     text-transform: uppercase;
-    background-image: linear-gradient(to right,#a5e999, #041601);
+    background-image: linear-gradient(to right,#adeea1, #072402);
 -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 transition: all .2s;
+padding: 20px 20px 50px;
 }
+
+
 .heading-secondary:hover {
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, .2);
     letter-spacing: .1rem;
@@ -70,29 +75,63 @@ background-color: white;
 
  }
  .card-side-back {
-background-color: green;
+/*background-color: green;*/
 transform: rotateY(180deg);
 
  }
  .card:hover  .card-side-front {
      transform: rotateY(-180deg);
+ }
+ 
+ .card:hover  .card-side-back {
+    transform: rotateY(0 );   
+}
+
+ .card-side-back-1 {
+    background-image: linear-gradient(to right bottom,#a5e999, #041601);
+ }
+
+
+ .card-side-back-2 {
+    background-image: linear-gradient(to right bottom,#b95b5b, #570e0e);
+ }
+
+ .card-side-back-3 {
+    background-image: linear-gradient(to right bottom,#ad56ca, #15011f);
+
 
  }
- .card:hover  .card-side-back {
-    transform: rotateY(0 );
-    
-}
+
 .card-picture {
     height: 23rem;
     background-size: cover;
 }
+
+
+
  .card-picture-1 {
 background-image: linear-gradient(to right bottom,
- rgba(120, 221, 80, 0.8), rgba(18, 58, 3, 0.9)), 
+ rgba(120, 180, 96, 0.8), rgba(18, 58, 3, 0.9)), 
 url(/IMG/images10.jpg);
  }
+
+
+ .card-picture-2 {
+    background-image: linear-gradient(to right bottom,
+     rgba(160, 100, 100, 0.589), rgba(54, 5, 4, 0.603)), 
+    url(/IMG/images11.jpg);
+     }
+
+
+     .card-picture-3 {
+        background-image: linear-gradient(to right bottom,
+         rgb(148, 81, 165), rgba(31, 2, 48, 0.603)), 
+        url(/IMG/images12.jpg);
+         }
+
+
  .card-heading {
-     font-size: 2.8rem;
+     font-size: 2.5rem;
      font-weight: 300;
      text-transform: uppercase;
      color: white;
@@ -139,19 +178,21 @@ color: white;
   
  }
  .card-price-text {
-    font-size: 1.4rem;
+    font-size: 2rem;
     text-transform: uppercase;
 }
  .card-price-value {
 font-size: 6rem;
 font-weight: 100 ;
 }
+ 
  .btn-custom {
      font-size: 1.2rem;
      font-weight: 700;
      text-transform: uppercase;
      padding: 1rem 2.5rem;
-     padding: 1px solid transparent ;
+     border: 1px solid transparent;
      border-radius: 100px;
+
  }
  
